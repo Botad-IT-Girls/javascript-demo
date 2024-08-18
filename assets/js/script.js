@@ -18,13 +18,13 @@ var isMale = true;
 function greet(name) {
     name = 'John Wick';
     console.log("Hello " + name);
-} */
+}
 
 
 // console.log(greet(name));
 
 
-/*
+const firstName = `John`;
 const name = "John Doe";
 let age = 30;
 
@@ -62,6 +62,9 @@ age += 10; // age = age + 10;
 maut -= 10; // maut = maut - 10;
 
 fullName += ' Doe'; // fullName = fullName + ' Doe'; */
+
+/* const age = 50;
+const personAge = age == 50 ? 'aged' : 'not aged'; */
 
 
 
@@ -138,7 +141,7 @@ finally {
     // }
 
     return firstName + " " + lastName;
-} 
+}
 
 console.log(greet());*/
 
@@ -163,4 +166,45 @@ const person = new Person('John Doe', 30);
 const person2 = new Person('Jane Doe', 25);
 
 console.log(person.greet()); */
+
+/* function handleH1Click() {
+    const h1 = document.getElementById('h1');
+    h1.style.color = 'red';
+    h1.style.fontSize = '30px';
+}
+
+function handleInputChange() {
+    const input = document.getElementById('changeDemo');
+    const output = document.getElementById('log-msg');
+    output.innerHTML = input.value;
+} */
+
+/* function handleMouseEnter() {
+    alert('Mouse Enter');
+}
+
+function handleMouseOut() {
+    alert('Mouse Out');
+} */
+
+// arrays in javascript
+/* const fruits = ['Apple', 'Banana', 'Orange'];
+
+const cars = new Array('BMW', 'Audi', 'Mercedes');
+
+const student = ['John', 15, 9.5]; */
+
+/* const objStudent = {
+    "first name": 'John',
+    age: 15,
+    marks: 9.5
+};
+
+console.log(objStudent.name);
+console.log(objStudent.age);
+console.log(objStudent['marks']);
+
+ */
+
+
 
