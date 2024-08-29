@@ -206,5 +206,55 @@ console.log(objStudent['marks']);
 
  */
 
+/* 
+const num1Elem = document.getElementById('num1');
+const num2Elem = document.getElementById('num2');
+
+num1Elem.classList.add('new-class');
+console.log(num1Elem.classList.toString());
+num1Elem.classList.remove('input-text');
+console.log(num1Elem.classList.toString()); */
+
+/* const inputElems = document.querySelectorAll('input.input-text');
+console.log(inputElems); */
+
+/* inputElems.forEach((inputElem) => {
+    inputElem.classList.add('new-class');
+}); */
 
 
+
+
+function handleCalc(operation) {
+    const num1 = parseInt(document.getElementById('num1').value);
+    const num2 = parseInt(document.getElementById('num2').value);
+    let result = 0;
+    switch (operation) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+        default:
+            result = 'Invalid Operation';
+            break;
+    }
+
+    document.getElementById('result').innerHTML = result;
+}
+
+document.getElementById('btnAdd').addEventListener('click', () => {
+    handleCalc('+');
+});
+
+const inputSubstract = document.getElementById('inputSubstract');
+inputSubstract.addEventListener('blur', (elem) => {
+    console.log(inputSubstract.value);
+});

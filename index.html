@@ -23,8 +23,20 @@
 
     <!-- On mouseenter/mouseout demo -->
     <h2>On mouseenter/mouseout event demo</h2>
-    <div id="mouseEnterDemo" onmouseenter="handleMouseEnter()" onmouseout="handleMouseOut()">Mouse over me</div>
+    <div id="mouseEnterDemo">Mouse over me</div>
     <div id="mouseEnterLog"></div>
+
+
+    <!-- Calculator App via Accessing DOM -->
+    <h2>Calculator App via Accessing DOM</h2>
+    <input data-index="101" class="input-text" type="text" id="num1" placeholder="Enter first number" value="">
+    <input id="inputSubstract" data-index="102" class="input-text" type="text" id="num2" placeholder="Enter second number" value="">
+    <button id="btnAdd">Add</button>
+    <button onclick="handleCalc('-')">Subtract</button>
+    <button onclick="handleCalc('*')">Multiply</button>
+    <button onclick="handleCalc('/')">Divide</button>
+    <p>Result: <span id="result"></span></p>
+
 
     <script src="./assets/js/script.js"></script>
 </body>
