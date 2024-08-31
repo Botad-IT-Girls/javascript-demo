@@ -207,4 +207,9 @@ console.log(objStudent['marks']);
  */
 
 
-
+function handleFormSubmit(event) {
+    const firstName = document.forms['formDemo']['fname'].value;
+    const lastName = document.forms['formDemo']['lname'].value;
+    const message = 'Hi ' + firstName + ' ' + lastName + ', your form is submitted successfully';
+    alert(message);
+}

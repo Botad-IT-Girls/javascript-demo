@@ -26,6 +26,18 @@
     <div id="mouseEnterDemo" onmouseenter="handleMouseEnter()" onmouseout="handleMouseOut()">Mouse over me</div>
     <div id="mouseEnterLog"></div>
 
+    <!-- Accessing Forms -->
+    <h2>Accessing Forms</h2>
+    <form name="formDemo" id="formDemo" onsubmit="handleFormSubmit(event)">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required autocomplete="off"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label>Email Address:</label><br>
+        <input type="email" id="email" name="email" required autocomplete="off"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
     <script src="./assets/js/script.js"></script>
 </body>
 
