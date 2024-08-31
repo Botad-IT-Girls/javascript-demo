@@ -4,16 +4,18 @@
 <head>
     <title>Javascript Demo</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="./assets/library/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
-    <h1 onclick="handleH1Click()">JavaScript Demo</h1>
+    <!-- <h1 onclick="handleH1Click()">JavaScript Demo</h1>
     <p id="demo">JavaScript can change the content of an HTML element.</p>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button> -->
 
     <!-- On change event demo -->
     <h2>On change event demo</h2>
-    <input type="text" id="changeDemo" onkeyup="handleInputChange()">
+    <!-- <input type="text" id="changeDemo" onkeyup="handleInputChange()"> -->
     <!-- <select id="selectDemo" onchange="handleInputChange()">
         <option value="1">One</option>
         <option value="2">Two</option>
@@ -22,11 +24,20 @@
     <div id="log-msg"></div>
 
     <!-- On mouseenter/mouseout demo -->
-    <h2>On mouseenter/mouseout event demo</h2>
+    <!-- <h2>On mouseenter/mouseout event demo</h2>
     <div id="mouseEnterDemo" onmouseenter="handleMouseEnter()" onmouseout="handleMouseOut()">Mouse over me</div>
-    <div id="mouseEnterLog"></div>
+    <div id="mouseEnterLog"></div> -->
 
-    <script src="./assets/js/script.js"></script>
+    <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="inner-child">Inner Child 1</div>
+        <div class="inner-child">Inner Child 2</div>
+        <div class="inner-child">Inner Child 2</div>
+        <div class="inner-child">Inner Child 2</div>
+        <div class="inner-child">Inner Child 3</div>
+    </div>
+    <div class="child">Child 2</div>
+    </div>
 </body>
 
 </html>

@@ -207,4 +207,64 @@ console.log(objStudent['marks']);
  */
 
 
+/* document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM Loaded');
+}); */
 
+
+/* .test // class
+#test // id
+input[type='text'] // attribute
+[data-id="10"]   // data attribute
+.parent
+.child1 ~ .child2 // sibling
+.child1 + .child2 // adjacent sibling
+.child > div[class~="child1"]
+
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM Loaded');
+});
+
+const childElems = document.querySelectorAll('.child1');
+childElems.forEach(function (elem) {
+    elem.classList.add('newClass');
+});
+
+$('.child1').addClass('newClass');
+
+document.getElementById('test');
+$('#test');
+
+
+
+
+const firstName = document.forms['myForm']['firstName'].value;
+
+const firstName = $('#firstName').val();
+
+
+firstName.addEventListener('change', function () {
+    console.log('Changed');
+});
+$('input[name="firstName"]').change(function () {
+    console.log('Changed');
+});
+
+jQuery(document).ready(function ($) {
+    console.log('DOM Loaded');
+});
+
+setTimeout(() => {
+    console.log('DOM is not Loaded');
+}, 2000);
+
+setInterval(() => {
+    console.log('This functions runs every second.');
+}, 1000); */
+
+$('document').ready(function () {
+    alert('Document is ready');
+    $('.child .inner-child').lick(function () {
+        alert('Second button clicked');
+    });
+});
